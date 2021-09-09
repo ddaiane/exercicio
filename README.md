@@ -1,1 +1,1 @@
-dell_it_academy
+segredin
