@@ -10,7 +10,6 @@ c. A média de idade de todos os pacientes; */
 
 function mediaIdade() {
     const filePath = __dirname + process.argv[2];
-    console.log(filePath);
 
     let municipioPesquisado = 'CANOAS';
     let idadesPacientesMunicipio = []
@@ -62,3 +61,6 @@ function calculaMedia(array) {
     let saida = somaIdades / array.length;
     return saida.toFixed(3);
 }
+
+
+module.exports = { mediaIdade };
