@@ -1,0 +1,14 @@
+{
+  "name": "dell_it_academy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daiane Marcon",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
