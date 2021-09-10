@@ -9,7 +9,9 @@ b. A média de idade dos pacientes separados por gênero;
 c. A média de idade de todos os pacientes; */
 
 function mediaIdade() {
-    const filePath = __dirname + process.argv[2];
+    //const filePath = __dirname + process.argv[2];
+    const filePath = __dirname + '\\dados.csv';
+
 
     let municipioPesquisado = 'CANOAS';
     let idadesPacientesMunicipio = []
