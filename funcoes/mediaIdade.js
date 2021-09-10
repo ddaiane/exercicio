@@ -1,6 +1,6 @@
 const fs = require('fs');
 const parser = require('csv-parser');
-const process = require('process');
+//const process = require('process');
 const inquirer = require('inquirer');
 /* 
 1. [Consultar média de idade dos pacientes] Permitir que o usuário informe o nome do
@@ -22,7 +22,7 @@ function inicio() {
     inquirer.prompt(question).then((answer) => {
         if(answer["municipio"] === "sair") {
             var shell = require('shelljs');
-            shell.exec('Endlocal)');
+            shell.exec('process.kill(process.pid, 'SIGTERM')));
         }
         const municipio = answer["municipio"].toUpperCase();
         mediaIdade(municipio);
