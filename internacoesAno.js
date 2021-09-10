@@ -33,13 +33,15 @@ function internacoesAno() {
             }
         })
         .on('end', function () {
-            console.log("Internações de " + municipioPesquisado + " por ano:");
+            console.log("\n -- Internações de " + municipioPesquisado + " por ano -- \n");
             console.log("2018 - " + internacoes2018);
             console.log("2019 - " + internacoes2019);
             console.log("2020 - " + internacoes2020);
-            console.log("2021 - " + internacoes2021);
+            console.log("2021 - " + internacoes2021 + "\n");
         });
-
 }
 
 internacoesAno();
+
+
+module.exports = { internacoesAno };

@@ -41,10 +41,10 @@ function mediaIdade() {
             }
         })
         .on('end', function () {
-            console.log("Numero total de pacientes da cidade de " + municipioPesquisado + " : " + idadesPacientesMunicipio.length);
+            console.log("\nNumero total de pacientes da cidade de " + municipioPesquisado + " : " + idadesPacientesMunicipio.length);
             console.log("Média de idade feminina: " + calculaMedia(idadesF));
             console.log("Média de idade feminina: " + calculaMedia(idadesM));
-            console.log("Média de idade total: " + calculaMedia(idadesPacientesMunicipio));
+            console.log("Média de idade total: " + calculaMedia(idadesPacientesMunicipio) + "\n");
         });
 
 }
