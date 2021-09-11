@@ -9,15 +9,11 @@ b. O nome dos hospitais executantes;
 c. O número de dias que os pacientes permaneceram internados desde a
 solicitação até a alta deste paciente; */
 
-function inicio() {
+
+function tempoInternacao(filePath, solicitantePesquisado) {
+    //const filePath = __dirname + '\\dados.csv';
+    //let solicitantePesquisado = 'HOSPITAL SAO VICENTE DE PAULO';
     
-}
-
-
-function tempoInternacao() {
-    const filePath = __dirname + '\\dados.csv';
-
-    let solicitantePesquisado = 'HOSPITAL SAO VICENTE DE PAULO';
     let count = 1; //conta o numero do paciente na lista
 
     console.log(`\n -- Tempo de internação de pacientes encaminhados por ${solicitantePesquisado} -- \n`)

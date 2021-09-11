@@ -2,11 +2,13 @@ const fs = require('fs');
 const parser = require('csv-parser');
 const process = require('process');
 
+const { escolheFuncao } = require("../../main.js");
+
 /* [Determinar tempos de espera na fila] O programa deverá determinar e exibir os
 cinco casos com maior tempo de espera na fila; */
 
-function tempoFila() {
-    const filePath = __dirname + process.argv[2];
+function tempoFila(filePath) {
+   // const filePath = __dirname + process.argv[2];
 
     let maiorestempos = [0,0,0,0,0];
 
