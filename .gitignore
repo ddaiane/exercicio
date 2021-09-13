@@ -1,8 +1,5 @@
 node_modules
 
-test.mjs
-testando.js
-dados.csv
 *.png
 *.pdf
 *.zip
