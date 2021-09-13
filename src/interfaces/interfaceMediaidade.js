@@ -2,7 +2,8 @@ const inquirer = require('inquirer');
 const { mediaIdade } = require("../models/mediaIdade.js");
 
 
-function inicio(filePath) {
+
+function inicio1(filePath) {
     //pede o municipio e chama funcao
     const question = [
         {
@@ -20,8 +21,9 @@ function inicio(filePath) {
 }
 
 
-function apresentaResultado(municipioPesquisado, idadesPacientesMunicipio, mediaM, mediaF, mediaTotal) {
 
+function apresentaResultado(municipioPesquisado, idadesPacientesMunicipio, mediaM, mediaF, mediaTotal) {
+//apresenta os resultados e se nenhum paciente tiver sido inserido na array de todos pacientes da cidade, informa que nao foi encontrado paciente
     if(idadesPacientesMunicipio.length > 0) {
         console.log("\nNumero total de pacientes da cidade de " + municipioPesquisado + " : " + idadesPacientesMunicipio.length);
         console.log("Média de idade feminina: " + mediaF);
@@ -29,42 +31,13 @@ function apresentaResultado(municipioPesquisado, idadesPacientesMunicipio, media
         console.log("Média de idade total: " + mediaTotal + "\n");
         }
         else {
-            console.log("\nO município informado não consta nos dados");
+            console.log("\nO município informado não consta nos dados\n");
         }
+        const {fim} = require("./fim");
         fim();
 }
 
-function fim() {
-    inquirer
-  .prompt([{
-      type: 'list',
-      name: 'escolheFuncao',
-      message: 'Escolha uma opção',
-      choices: [
-        {
-          name: 'Retornar para o menu principal',
-          value: 1,
-        },
-        {
-          name: 'Sair',
-          value: 2,
-        }
-      ],
-    }
-  ])
-  .then((selecao) => {
-    switch(selecao["escolheFuncao"]) {
-      case 1: 
-        const main = require("../../main.js")
-        main.escolheFuncao();
-        break;
-      case 2:
-        shell = require('shelljs');
-        shell.exit(0);
-        break;
-    }
-  });
-}
 
 
-module.exports = { inicio, apresentaResultado};
+
+module.exports = { inicio1, apresentaResultado};
