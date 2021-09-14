@@ -4,4 +4,4 @@ Para utilizar a aplicação, navegue até a pasta do projeto pelo terminal e na 
 
 Necessário node + npm instalados na máquina
 
-cli app escrito em node e utilizando as libs csv-parses, inquirer e shellJS
+cli app escrito em node e utilizando as libs csv-parser, inquirer e shellJS
